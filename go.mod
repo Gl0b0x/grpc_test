@@ -1,4 +1,4 @@
-module grpc_test
+module github.com/Gl0b0x/grpc_test
 
 go 1.23.1
 
