@@ -10,10 +10,10 @@ get-deps:
 
 
 generate:
-	make generate-note-api
+	make generate-user-api
 
-generate-note-api:
-	mkdir -p pkg/note_v1
+generate-user-api:
+	mkdir -p pkg/user_v1
 	protoc --proto_path api/user_v1 \
 	--go_out=pkg/user_v1 --go_opt=paths=source_relative \
 	--plugin=protoc-gen-go=bin/protoc-gen-go \
